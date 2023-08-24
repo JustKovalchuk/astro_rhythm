@@ -1,0 +1,23 @@
+Event	ID	Name			Wwise Object Path	Notes
+	177180936	Lvl_one			\Default Work Unit\Music\Lvl_one	
+	577874077	Hit_Event			\Default Work Unit\SFX\Hit_Event	
+	953277036	Resume			\Default Work Unit\Resume	
+	1131770108	Miss_Event			\Default Work Unit\SFX\Miss_Event	
+	2397100950	Lvl_2			\Default Work Unit\Music\Lvl_2	
+	2397100951	Lvl_3			\Default Work Unit\Music\Lvl_3	
+	3086540886	StopAll			\Default Work Unit\StopAll	
+	3092587493	Pause			\Default Work Unit\Pause	
+	3354192397	Secret			\Default Work Unit\SFX\Secret	
+	4055567060	Menu_music			\Default Work Unit\Music\Menu_music	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	87570505	back_to_the_future_03__Alan_Silvestri_-_Back_To_The_Future	D:\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\back_to_the_future_03._Alan_Silvestri_-_Back_To_The_Future_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\back_to_the_future_03__Alan_Silvestri_-_Back_To_The_Future		1192844
+	183127534	Hit_Hurt10	D:\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\Hit_Hurt10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Random Container\Hit_Hurt10		10240
+	226741675	Explosion	D:\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\Explosion_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Random Container_01\Explosion		10240
+	316166974	Cold_Space	D:\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\Cold_Space_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Cold_Space\Cold_Space		17280096
+	388262762	Hit_Hurt4	D:\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\Hit_Hurt4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Random Container\Hit_Hurt4		15606
+	514013620	A_New_Planet	D:\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\A_New_Planet_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\A_New_Planet\A_New_Planet		7121548
+	846654128	Explosion10	D:\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\Explosion10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Random Container_01\Explosion10		10836
+	870883531	Hit_Hurt	D:\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\Hit_Hurt_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Random Container\Hit_Hurt		10240
+	1066614353	Hit_Hurt6	D:\lphackathon\lphackathon_WwiseProject\.cache\Windows\SFX\Hit_Hurt6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Random Container\Hit_Hurt6		10240
+

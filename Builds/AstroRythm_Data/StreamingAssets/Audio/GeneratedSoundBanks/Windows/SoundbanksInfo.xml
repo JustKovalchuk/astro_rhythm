@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{68D0AFCE-E4FC-E179-0CC4-CFC362912D47}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3991942870" Name="Music"/>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="988953028" Name="SFXVolume"/>
+				<GameParameter Id="2346531308" Name="MusicVolume"/>
+				<GameParameter Id="2918011349" Name="MasterVolume"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{09417738-75BB-4904-BC78-1ECB814185B2}">
+			<ShortName>Main_SoundBank</ShortName>
+			<Path>Main_SoundBank.bnk</Path>
+			<Media>
+				<File Id="87570505" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>back_to_the_future_03._Alan_Silvestri_-_Back_To_The_Future.wav</ShortName>
+					<CachePath>SFX/back_to_the_future_03._Alan_Silvestri_-_Back_To_The_Future_10C4C929.wem</CachePath>
+				</File>
+				<File Id="183127534" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit_Hurt10.wav</ShortName>
+					<CachePath>SFX/Hit_Hurt10_10C4C929.wem</CachePath>
+				</File>
+				<File Id="226741675" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Explosion.wav</ShortName>
+					<CachePath>SFX/Explosion_10C4C929.wem</CachePath>
+				</File>
+				<File Id="316166974" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cold_Space.wav</ShortName>
+					<CachePath>SFX/Cold_Space_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="388262762" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit_Hurt4.wav</ShortName>
+					<CachePath>SFX/Hit_Hurt4_10C4C929.wem</CachePath>
+				</File>
+				<File Id="514013620" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>A_New_Planet.wav</ShortName>
+					<CachePath>SFX/A_New_Planet_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="846654128" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Explosion10.wav</ShortName>
+					<CachePath>SFX/Explosion10_10C4C929.wem</CachePath>
+				</File>
+				<File Id="870883531" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit_Hurt.wav</ShortName>
+					<CachePath>SFX/Hit_Hurt_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1066614353" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hit_Hurt6.wav</ShortName>
+					<CachePath>SFX/Hit_Hurt6_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="577874077" Name="Hit_Event" DurationType="OneShot" DurationMin="0.115011334" DurationMax="0.121768706">
+					<MediaRefs>
+						<MediaRef Id="226741675"/>
+						<MediaRef Id="846654128"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2397100950" Name="Lvl_2" DurationType="OneShot" DurationMin="90" DurationMax="90">
+					<MediaRefs>
+						<MediaRef Id="316166974"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2397100951" Name="Lvl_3" DurationType="OneShot" DurationMin="90" DurationMax="90">
+					<MediaRefs>
+						<MediaRef Id="316166974"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="177180936" Name="Lvl_one" DurationType="OneShot" DurationMin="37.090893" DurationMax="37.090893">
+					<MediaRefs>
+						<MediaRef Id="514013620"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4055567060" Name="Menu_music" DurationType="OneShot" DurationMin="38.090893" DurationMax="38.090893">
+					<MediaRefs>
+						<MediaRef Id="514013620"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1131770108" Name="Miss_Event" DurationType="OneShot" DurationMin="0.115011334" DurationMax="0.17585035">
+					<MediaRefs>
+						<MediaRef Id="183127534"/>
+						<MediaRef Id="388262762"/>
+						<MediaRef Id="870883531"/>
+						<MediaRef Id="1066614353"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3092587493" Name="Pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="953277036" Name="Resume" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3354192397" Name="Secret" DurationType="OneShot" DurationMin="6.76161" DurationMax="6.76161">
+					<MediaRefs>
+						<MediaRef Id="87570505"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3086540886" Name="StopAll" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{05BD0715-E019-F875-FDB0-6AA262BAD57E}</FileHash>
+</SoundBanksInfo>

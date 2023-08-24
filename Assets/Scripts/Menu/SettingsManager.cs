@@ -1,22 +1,26 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
+
+[System.Serializable]
+public enum RythmKey { Key1, Key2, Key3, Key4 }
 
 public class SettingsManager : MonoBehaviour
 {
     private MenuManager menuManager;
 
     public static bool IsBinding { get; private set; }
-    private int keyIndexToBind;
+    private RythmKey rythmKeyToBind;
 
     [SerializeField] private TextMeshProUGUI[] keysTexts;
 
-    private static KeyCode[] keys = new KeyCode[4];
+    private static Dictionary<RythmKey, KeyCode> keys = new Dictionary<RythmKey, KeyCode>(4);
 
-    public static KeyCode Key1 => keys[0];
-    public static KeyCode Key2 => keys[1];
-    public static KeyCode Key3 => keys[2];
-    public static KeyCode Key4 => keys[3];
+    public static KeyCode Key1 => keys[RythmKey.Key1];
+    public static KeyCode Key2 => keys[RythmKey.Key2];
+    public static KeyCode Key3 => keys[RythmKey.Key3];
+    public static KeyCode Key4 => keys[RythmKey.Key4];
 
     [SerializeField] private AK.Wwise.Event SecretEvent;
     [SerializeField] private Slider masterVolumeSlider;
@@ -34,15 +38,15 @@ public class SettingsManager : MonoBehaviour
         musicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolume", 75);
         sfxVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume", 75);
 
-        keys[0] = (KeyCode)PlayerPrefs.GetInt("key0", (int)KeyCode.D);
-        keys[1] = (KeyCode)PlayerPrefs.GetInt("key1", (int)KeyCode.F);
-        keys[2] = (KeyCode)PlayerPrefs.GetInt("key2", (int)KeyCode.J);
-        keys[3] = (KeyCode)PlayerPrefs.GetInt("key3", (int)KeyCode.K);
+        keys[RythmKey.Key1] = (KeyCode)PlayerPrefs.GetInt(RythmKey.Key1.ToString(), (int)KeyCode.D);
+        keys[RythmKey.Key2] = (KeyCode)PlayerPrefs.GetInt(RythmKey.Key2.ToString(), (int)KeyCode.F);
+        keys[RythmKey.Key3] = (KeyCode)PlayerPrefs.GetInt(RythmKey.Key3.ToString(), (int)KeyCode.J);
+        keys[RythmKey.Key4] = (KeyCode)PlayerPrefs.GetInt(RythmKey.Key4.ToString(), (int)KeyCode.K);
 
-        keysTexts[0].text = keys[0].ToString();
-        keysTexts[1].text = keys[1].ToString();
-        keysTexts[2].text = keys[2].ToString();
-        keysTexts[3].text = keys[3].ToString();
+        keysTexts[0].text = keys[RythmKey.Key1].ToString();
+        keysTexts[1].text = keys[RythmKey.Key2].ToString();
+        keysTexts[2].text = keys[RythmKey.Key3].ToString();
+        keysTexts[3].text = keys[RythmKey.Key4].ToString();
     }
 
     private void OnGUI()
@@ -59,12 +63,15 @@ public class SettingsManager : MonoBehaviour
                 return;
             }
 
-            BindKey(e.keyCode, keyIndexToBind);
+            BindKey(e.keyCode, rythmKeyToBind);
             EndBinding();
         }
     }
 
-
+    public static KeyCode GetKey(RythmKey key)
+    {
+        return keys[key];
+    }
     public void SetMasterVolume(float value)
     {
         AkSoundEngine.SetRTPCValue("MasterVolume", value);
@@ -81,38 +88,36 @@ public class SettingsManager : MonoBehaviour
         PlayerPrefs.SetFloat("SFXVolume", value);
     }
 
-    public void StartBind(int keyIndexToBind)
+    public void StartBind(RythmKey rythmKeyToBind)
     {
         IsBinding = true;
         menuManager.EnableOverlay();
-        this.keyIndexToBind = keyIndexToBind;
+        this.rythmKeyToBind = rythmKeyToBind;
     }
     public void EndBinding()
     {
         menuManager.DisableOverlay();
         IsBinding = false;
-        if ((keys[0] == KeyCode.Alpha1 || keys[0] == KeyCode.Keypad1) &&
-            (keys[1] == KeyCode.Alpha9 || keys[1] == KeyCode.Keypad9) && 
-            (keys[2] == KeyCode.Alpha8 || keys[2] == KeyCode.Keypad8) && 
-            (keys[3] == KeyCode.Alpha5 || keys[3] == KeyCode.Keypad5))
+        if ((keys[RythmKey.Key1] == KeyCode.Alpha1 || keys[RythmKey.Key1] == KeyCode.Keypad1) &&
+            (keys[RythmKey.Key2] == KeyCode.Alpha9 || keys[RythmKey.Key2] == KeyCode.Keypad9) && 
+            (keys[RythmKey.Key3] == KeyCode.Alpha8 || keys[RythmKey.Key3] == KeyCode.Keypad8) && 
+            (keys[RythmKey.Key4] == KeyCode.Alpha5 || keys[RythmKey.Key4] == KeyCode.Keypad5))
         {
             Debug.Log("Secret");
             GetComponent<Animator>().Play("Dlorian");
             SecretEvent?.Post(gameObject);
         }
-        Debug.Log("0:" + keys[0]);
-        Debug.Log("1:" + keys[1]);
-        Debug.Log("2:" + keys[2]);
-        Debug.Log("3:" + keys[3]);
+        Debug.Log("0:" + keys[RythmKey.Key1]);
+        Debug.Log("1:" + keys[RythmKey.Key2]);
+        Debug.Log("2:" + keys[RythmKey.Key3]);
+        Debug.Log("3:" + keys[RythmKey.Key4]);
     }
-    public void BindKey(KeyCode key, int keyIndex)
+    public void BindKey(KeyCode key, RythmKey rythmKey)
     {
-        if (keyIndex >= 4)
-            return;
+        keys[rythmKey] = key;
+        keysTexts[(int)rythmKey].text = key.ToString();
 
-        keys[keyIndex] = key;
-        keysTexts[keyIndex].text = key.ToString();
-
-        PlayerPrefs.SetInt("key" + keyIndex, (int)key);
+        PlayerPrefs.SetInt(rythmKey.ToString(), (int)key);
+        PlayerPrefs.Save();
     }
 }

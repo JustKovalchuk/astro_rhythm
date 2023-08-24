@@ -5000,46 +5000,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 7444164679573585255}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartBind
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SettingsManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 5462005052209419841, guid: a4c1c4403a7d60746896ce2594772c21,
         type: 3}
       propertyPath: m_text
@@ -5049,6 +5009,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontSize
       value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369357981732719221, guid: a4c1c4403a7d60746896ce2594772c21,
+        type: 3}
+      propertyPath: keyToBind
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4c1c4403a7d60746896ce2594772c21, type: 3}
@@ -7158,46 +7123,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 7444164679573585255}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartBind
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SettingsManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 5462005052209419841, guid: a4c1c4403a7d60746896ce2594772c21,
         type: 3}
       propertyPath: m_text
@@ -7207,6 +7132,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontSize
       value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369357981732719221, guid: a4c1c4403a7d60746896ce2594772c21,
+        type: 3}
+      propertyPath: keyToBind
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4c1c4403a7d60746896ce2594772c21, type: 3}
@@ -8005,46 +7935,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 7444164679573585255}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartBind
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SettingsManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 5462005052209419841, guid: a4c1c4403a7d60746896ce2594772c21,
         type: 3}
       propertyPath: m_text
@@ -8054,6 +7944,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontSize
       value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369357981732719221, guid: a4c1c4403a7d60746896ce2594772c21,
+        type: 3}
+      propertyPath: keyToBind
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4c1c4403a7d60746896ce2594772c21, type: 3}
@@ -8356,41 +8251,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 7444164679573585255}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartBind
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SettingsManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1863527405539912169, guid: a4c1c4403a7d60746896ce2594772c21,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5462005052209419841, guid: a4c1c4403a7d60746896ce2594772c21,
         type: 3}
